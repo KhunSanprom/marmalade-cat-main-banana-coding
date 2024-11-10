@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-web.css">
+
+    <title>Document</title>
+</head>
+
+<body style="flex-direction: column; background-color: #F8F8F2 ;">
+    <div class="bg-margin">
+        <script src="script.js"></script>
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <button class="navbar-brand border-0 bg-transparent">
+                <p class="d-inline mb-0 ddl_typesscale-headline-m ddl_typesweight-regular"><span
+                        class="d-inline mb-0 ddl_color-text-orange-500 ddl_typesscale-headline-m ddl_typesweight-bold">My
+                    </span>Portfolio</p>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active ddl_typesscale-label-l ddl_typesweight-regular" href="#"
+                            onclick="setActive(this)">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ddl_typesscale-label-l ddl_typesweight-regular" href="#AboutMe"
+                            onclick="setActive(this)">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ddl_typesscale-label-l ddl_typesweight-regular" href="#myProject"
+                            onclick="setActive(this)">My Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ddl_typesscale-label-l ddl_typesweight-regular" href="#contact"
+                            onclick="setActive(this)">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="greet">
+            <div class="greet-text">
+                <p>Hi There!</p>
+            </div>
+            <div class="MyName d-flex" style="gap: 0.5rem;">
+                <p>I’m <span class="ddl_color-text-orange-500">Santi
+                        Tangjareonsakul
+                    </span></p>
+            </div>
+            <div class="JobDiscription " style="gap: 0.25rem; padding-top: 2rem;">
+                <p class="ddl_typesscale-headline-s ddl_typesweight-bold text-line">Front-End Designer/</p>
+                <p class="ddl_typesscale-headline-s ddl_typesweight-bold text-line-ui-custom">UI Designer</p>
+            </div>
+        </div>
+        <div class="btn-contact-us">
+            <a href="#contact">
+                <button type="button" class="btn btn-ddl_primary ddl_typesscale-headline-s mt-2 me-3">Contact
+                    Us</button>
+            </a>
+        </div>
+        <div class="about-me " id="AboutMe">
+            <div class="about-me-header " style="gap: 0.5rem; padding-top: 4rem; ">
+                <p class="ddl_typesscale-display-l ddl_typesweight-regular text-line-header">
+                    About
+                    <span class="ddl_typesscale-display-l ddl_typesweight-bold ddl_color-text-orange-500">Me</span>
+                </p>
+            </div>
+            <div class="AboutMeContent d-flex">
+                <img class="ddl-shadow_regular" src="assets/img/Astro .png">
+                <div class="row" style="max-height: 410px;">
+                    <div class="AboutMeContentText">
+                        <div class="about-me-discription">
+                            <p>I’m<span> Max</span>,As a full-stack developer, I weave enchanting spells with
+                                <span class="ddl_color-text-orange-500">Ruby,
+                                    JavaScript, and a dash of CSS</span>
+                                . My potions include responsive designs, RESTful APIs, and magical user experiences.
+                            </p>
+                        </div>
+                        <div class="skill-header">
+                            <p>Skill</p>
+                        </div>
+                        <div class="skill-list-container">
+                            <ul>
+                                <li>
+                                    <span>Ruby Alchemy: </span>Crafting
+                                    elegant back-end solutions with Ruby on Rails.
+                                </li>
+                                <li>
+                                    <span>JavaScript
+                                        Incantations: </span>
+                                    From vanilla JS hexes to React enchantments.
+                                </li>
+                                <li>
+                                    <span>CSS Enchantment: </span>
+                                    Styling interfaces that shimmer like moonlight on a tranquil lake.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="my-project " id="myProject">
+            <div class="my-project-header">
+                <p class="ddl_typesscale-display-l ddl_typesweight-regular text-line-header-myproject ">
+                    <span class="ddl_typesscale-display-l ddl_typesweight-bold ddl_color-text-orange-500">My
+                    </span>Project
+                </p>
+            </div>
+            <div class="my-project-content">
+                <div class="project-item">
+                    
+                    <img class="img-bueno img-set-margin-pj ddl-shadow_right" src="assets/img/Bueno.png">
+                    <div class="my-project-content-text-set-margin">
+                    <div class="project-description-name">
+                        <p>Project name: <span>PixelGrove</span></p>
+                    </div>
+                    <p class="ddl_typesscale-body-m ddl_typesweight-regular ddl_typesweight-regular">A responsive
+                        e-commerce
+                        A responsive e-commerce website for an imaginary boutique selling handcrafted pixel art.
+                        Users
+                        can
+                        explore pixelated products, add them to their cart, and experience smooth transitions
+                        between
+                        pages.
+                        The color palette? Vibrant 8-bit nostalgia!</p>
+                    <div class="bottom-line"></div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img class="img-growth img-set-margin-pj ddl-shadow_bottom" src="assets/img/Growth.png">
+                <div class="my-project-content-text-set-margin">
+                    <div class="project-description-name">
+                        <p>Project name: <span>Inkflow</span></p>
+                    </div>
+                    <p class="ddl_typesscale-body-m ddl_typesweight-regular ddl_typesweight-regular">A responsive
+                        e-commerce
+                         minimalist portfolio site for a calligraphy artist. Each page elegantly showcases different
+                        styles
+                        of hand-lettered quotes, with subtle animations as users scroll. The navigation? A graceful ink
+                        stroke that guides visitors through the artist’s journey.</p>
+                    <div class="bottom-line"></div>
+                </div>
+            </div>
+            <div class="project-item">
+                <img class="img-waiting img-set-margin-pj ddl-shadow_left" src="assets/img/Waiting.png">
+                <div class="my-project-content-text-set-margin">
+                    <div class="project-description-name">
+                        <p>Project name: <span>NeonScape</span></p>
+                    </div>
+                    <div>
+                        <p class="ddl_typesscale-body-m ddl_typesweight-regular ddl_typesweight-regular">A responsive
+                            e-commerce
+                            An interactive landing page for a fictional neon sign studio. Visitors can customize their
+                            own
+                            neon
+                            signs by choosing colors, fonts, and animations. The background? A mesmerizing cityscape at
+                            dusk,
+                            with glowing signs reflecting off rain-soaked streets.</p>
+                        <div class="bottom-line"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact-header">
+                <p class="ddl_typesscale-display-l ddl_typesweight-regular text-line-header">Contact</p>
+            </div>
+            <div class="contact-content">
+                <div class="email-input">
+                    <label class="form-label ddl_typesscale-label-s ddl_typesweight-bold mb-0">Email</label>
+                    <input class="form-control focus-ring focus-ring-light ddl-input" type="text"
+                        aria-label="default input example" style="width: 100%;">
+                </div>
+                <div class="message-contact">
+                    <label class="form-label ddl_typesscale-label-s ddl_typesweight-bold mb-0">Message</label>
+                    <textarea class="form-control focus-ring focus-ring-light ddl-input mb-3" rows="8"></textarea>
+                </div>
+
+            </div>
+            <div class="btn-sent-contact">
+                <a href="#sent-contact">
+                    <button type="button" class="btn btn-ddl_primary ddl_typesscale-headline-s mt-2 me-3">Sent</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bottom-bar">
+        <p class="ddl_typesscale-label-s ddl_typesweight-bold" style="margin-top: 1rem;">Copyright © 2024 Banana
+            Coding,
+            All Rights Reserved.</p>
+    </div>
+</body>
+
+</html>
